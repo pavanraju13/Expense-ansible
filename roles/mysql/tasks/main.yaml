@@ -1,9 +1,9 @@
-- name: Installing {{ compomnent }}-{{ env }}
+- name: Installing {{ component }}-{{ env }}
   ansible.builtin.package:
     name: mysql-server
     state: present
   
-- name: Starting {{ compomnent }} service
+- name: Starting {{ component }} service
   ansible.builtin.service:
     name: mysqld
     state: started
